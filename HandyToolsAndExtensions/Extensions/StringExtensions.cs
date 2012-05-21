@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 using System.Linq;
 
@@ -7,7 +8,7 @@ namespace HandyToolsAndExtensions.Extensions
 {
     public static class StringExtensions
     {
-        public static string With(this string format, params object[] args)
+        public static string Fill(this string format, params object[] args)
         {
             return String.Format(format, args);
         }
@@ -17,14 +18,29 @@ namespace HandyToolsAndExtensions.Extensions
             return String.IsNullOrWhiteSpace(@string);
         }
 
+        public static bool IsNullOrEmpty(this string @string)
+        {
+            return String.IsNullOrEmpty(@string);
+        }
+
         public static long ToLong(this string @string)
         {
-            return long.Parse(@string);
+            return Int64.Parse(@string);
         }
 
         public static double ToDouble(this string @string)
         {
-            return double.Parse(@string);
+            return Double.Parse(@string);
+        }
+
+        public static T ToEnum<T>(this string @string)
+        {
+            return (T)(@string.IsNullOrEmpty() ? default(T) : Enum.Parse(typeof(T), @string.Replace(" ", ""), true));
+        }
+
+        public static DateTime ToDateTime(this string @string)
+        {
+            return DateTime.ParseExact(@string, "dd/mm/yyyy", CultureInfo.InvariantCulture);
         }
 
         public static IEnumerable<string> SplitLines(this string @string)
@@ -40,14 +56,14 @@ namespace HandyToolsAndExtensions.Extensions
 
                 foreach (var substring in substrings)
                 {
-                    builder.Replace(substring, string.Empty);
+                    builder.Replace(substring, String.Empty);
                 }
 
                 return builder.ToString();
             }
             else
             {
-                return @string.Replace(substrings[0], string.Empty);
+                return @string.Replace(substrings[0], String.Empty);
             }
         }
 

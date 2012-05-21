@@ -6,11 +6,11 @@ namespace HandyToolsAndExtensions.Extensions
     {
         public static string Describe(this Exception exception)
         {
-            var description = "{0}{1}".With(exception.Message, exception.StackTrace);
+            var description = "{0}{1}".Fill(exception.Message, exception.StackTrace);
 
             if (exception.InnerException != null)
             {
-                description += "{0}{1}".With(
+                description += "{0}{1}".Fill(
                     Environment.NewLine, 
                     exception.InnerException.Describe());
             }
