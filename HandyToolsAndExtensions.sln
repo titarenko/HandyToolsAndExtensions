@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyToolsAndExtensions", "HandyToolsAndExtensions\HandyToolsAndExtensions.csproj", "{87D8BFAB-4D60-4CC8-B104-0238EDD7C388}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyToolsAndExtensions.Tests", "HandyToolsAndExtensions.Tests\HandyToolsAndExtensions.Tests.csproj", "{C45DD28C-E7A0-42E6-BE3B-745113F0D19B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87D8BFAB-4D60-4CC8-B104-0238EDD7C388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87D8BFAB-4D60-4CC8-B104-0238EDD7C388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87D8BFAB-4D60-4CC8-B104-0238EDD7C388}.Debug|x86.ActiveCfg = Debug|x86
+		{87D8BFAB-4D60-4CC8-B104-0238EDD7C388}.Debug|x86.Build.0 = Debug|x86
+		{87D8BFAB-4D60-4CC8-B104-0238EDD7C388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87D8BFAB-4D60-4CC8-B104-0238EDD7C388}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87D8BFAB-4D60-4CC8-B104-0238EDD7C388}.Release|x86.ActiveCfg = Release|x86
+		{87D8BFAB-4D60-4CC8-B104-0238EDD7C388}.Release|x86.Build.0 = Release|x86
+		{C45DD28C-E7A0-42E6-BE3B-745113F0D19B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C45DD28C-E7A0-42E6-BE3B-745113F0D19B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C45DD28C-E7A0-42E6-BE3B-745113F0D19B}.Debug|x86.ActiveCfg = Debug|x86
+		{C45DD28C-E7A0-42E6-BE3B-745113F0D19B}.Debug|x86.Build.0 = Debug|x86
+		{C45DD28C-E7A0-42E6-BE3B-745113F0D19B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C45DD28C-E7A0-42E6-BE3B-745113F0D19B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C45DD28C-E7A0-42E6-BE3B-745113F0D19B}.Release|x86.ActiveCfg = Release|x86
+		{C45DD28C-E7A0-42E6-BE3B-745113F0D19B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
